@@ -1,0 +1,57 @@
+
+/* Class = "NSMenuItem"; title = "MonthCalendarWidget"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "MonthCalendarWidget";
+
+/* Class = "NSTextFieldCell"; title = "Installation Instructions"; ObjectID = "3EL-2P-EnF"; */
+"3EL-2P-EnF.title" = "Для установки виджета:\n\n1. Откройте центр уведомлений, нажав на его иконку в правом верхнем углу экрана\n\n2. Нажмите \"Изменить\"\n\n3. Нажмите \"+\" напротив Month Calendar";
+
+/* Class = "NSButtonCell"; title = "Visit the project page on GitHub"; ObjectID = "3yf-cx-K1K"; */
+"3yf-cx-K1K.title" = "Страница приложения на GitHub";
+
+/* Class = "NSMenuItem"; title = "Quit MonthCalendarWidget"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Завершить MonthCalendarWidget";
+
+/* Class = "NSMenuItem"; title = "About MonthCalendarWidget"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "О программе MonthCalendarWidget";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Показать все";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Все окна – на передний план";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Службы";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Свернуть";
+
+/* Class = "NSMenuItem"; title = "Hide MonthCalendarWidget"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Скрыть MonthCalendarWidget";
+
+/* Class = "NSWindow"; title = "MonthCalendarWidget"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "MonthCalendarWidget";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Масштаб";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Окно";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Скрыть остальные";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Окно";
+
+/* Class = "NSTextFieldCell"; title = "Month Calendar Widget"; ObjectID = "bp9-dV-52r"; */
+"bp9-dV-52r.title" = "Month Calendar Widget";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Службы";
+
+/* Class = "NSMenu"; title = "MonthCalendarWidget"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "MonthCalendarWidget";

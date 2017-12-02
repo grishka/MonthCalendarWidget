@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		697A4B131FA73CB600302898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697A4B121FA73CB600302898 /* AppDelegate.m */; };
+		697A4B151FA73CB600302898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697A4B141FA73CB600302898 /* Assets.xcassets */; };
+		697A4B181FA73CB600302898 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697A4B161FA73CB600302898 /* MainMenu.xib */; };
+		697A4B1B1FA73CB600302898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697A4B1A1FA73CB600302898 /* main.m */; };
+		697A4B291FA73DFF00302898 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697A4B281FA73DFF00302898 /* NotificationCenter.framework */; };
+		697A4B2D1FA73DFF00302898 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697A4B2C1FA73DFF00302898 /* TodayViewController.m */; };
+		697A4B301FA73DFF00302898 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697A4B2E1FA73DFF00302898 /* TodayViewController.xib */; };
+		697A4B381FA73DFF00302898 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 697A4B261FA73DFF00302898 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		697A4B3F1FA7600500302898 /* CWCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697A4B3E1FA7600500302898 /* CWCalendarView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		697A4B361FA73DFF00302898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697A4B061FA73CB600302898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 697A4B251FA73DFF00302898;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		697A4B3C1FA73DFF00302898 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				697A4B381FA73DFF00302898 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		697A4B0E1FA73CB600302898 /* MonthCalendarWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonthCalendarWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		697A4B111FA73CB600302898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		697A4B121FA73CB600302898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		697A4B141FA73CB600302898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		697A4B171FA73CB600302898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		697A4B191FA73CB600302898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697A4B1A1FA73CB600302898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		697A4B1C1FA73CB600302898 /* MonthCalendarWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonthCalendarWidget.entitlements; sourceTree = "<group>"; };
+		697A4B261FA73DFF00302898 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		697A4B281FA73DFF00302898 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		697A4B2B1FA73DFF00302898 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		697A4B2C1FA73DFF00302898 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		697A4B2F1FA73DFF00302898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		697A4B311FA73DFF00302898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697A4B351FA73DFF00302898 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		697A4B3D1FA7600500302898 /* CWCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWCalendarView.h; sourceTree = "<group>"; };
+		697A4B3E1FA7600500302898 /* CWCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWCalendarView.m; sourceTree = "<group>"; };
+		69CB86441FD325E900ABFBF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		69CB86451FD3261900ABFBF0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		697A4B0B1FA73CB600302898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697A4B231FA73DFF00302898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A4B291FA73DFF00302898 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		697A4B051FA73CB600302898 = {
+			isa = PBXGroup;
+			children = (
+				697A4B101FA73CB600302898 /* MonthCalendarWidget */,
+				697A4B2A1FA73DFF00302898 /* Widget */,
+				697A4B271FA73DFF00302898 /* Frameworks */,
+				697A4B0F1FA73CB600302898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		697A4B0F1FA73CB600302898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				697A4B0E1FA73CB600302898 /* MonthCalendarWidget.app */,
+				697A4B261FA73DFF00302898 /* Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		697A4B101FA73CB600302898 /* MonthCalendarWidget */ = {
+			isa = PBXGroup;
+			children = (
+				697A4B111FA73CB600302898 /* AppDelegate.h */,
+				697A4B121FA73CB600302898 /* AppDelegate.m */,
+				697A4B141FA73CB600302898 /* Assets.xcassets */,
+				697A4B161FA73CB600302898 /* MainMenu.xib */,
+				697A4B191FA73CB600302898 /* Info.plist */,
+				697A4B1A1FA73CB600302898 /* main.m */,
+				697A4B1C1FA73CB600302898 /* MonthCalendarWidget.entitlements */,
+			);
+			path = MonthCalendarWidget;
+			sourceTree = "<group>";
+		};
+		697A4B271FA73DFF00302898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697A4B281FA73DFF00302898 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697A4B2A1FA73DFF00302898 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				697A4B2B1FA73DFF00302898 /* TodayViewController.h */,
+				697A4B2C1FA73DFF00302898 /* TodayViewController.m */,
+				697A4B3D1FA7600500302898 /* CWCalendarView.h */,
+				697A4B3E1FA7600500302898 /* CWCalendarView.m */,
+				697A4B2E1FA73DFF00302898 /* TodayViewController.xib */,
+				697A4B311FA73DFF00302898 /* Info.plist */,
+				697A4B351FA73DFF00302898 /* Widget.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		697A4B0D1FA73CB600302898 /* MonthCalendarWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697A4B1F1FA73CB600302898 /* Build configuration list for PBXNativeTarget "MonthCalendarWidget" */;
+			buildPhases = (
+				697A4B0A1FA73CB600302898 /* Sources */,
+				697A4B0B1FA73CB600302898 /* Frameworks */,
+				697A4B0C1FA73CB600302898 /* Resources */,
+				697A4B3C1FA73DFF00302898 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				697A4B371FA73DFF00302898 /* PBXTargetDependency */,
+			);
+			name = MonthCalendarWidget;
+			productName = MonthCalendarWidget;
+			productReference = 697A4B0E1FA73CB600302898 /* MonthCalendarWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		697A4B251FA73DFF00302898 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697A4B391FA73DFF00302898 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				697A4B221FA73DFF00302898 /* Sources */,
+				697A4B231FA73DFF00302898 /* Frameworks */,
+				697A4B241FA73DFF00302898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 697A4B261FA73DFF00302898 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		697A4B061FA73CB600302898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Grishka;
+				TargetAttributes = {
+					697A4B0D1FA73CB600302898 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					697A4B251FA73DFF00302898 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 697A4B091FA73CB600302898 /* Build configuration list for PBXProject "MonthCalendarWidget" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 697A4B051FA73CB600302898;
+			productRefGroup = 697A4B0F1FA73CB600302898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				697A4B0D1FA73CB600302898 /* MonthCalendarWidget */,
+				697A4B251FA73DFF00302898 /* Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		697A4B0C1FA73CB600302898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A4B151FA73CB600302898 /* Assets.xcassets in Resources */,
+				697A4B181FA73CB600302898 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697A4B241FA73DFF00302898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A4B301FA73DFF00302898 /* TodayViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		697A4B0A1FA73CB600302898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A4B1B1FA73CB600302898 /* main.m in Sources */,
+				697A4B131FA73CB600302898 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697A4B221FA73DFF00302898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A4B3F1FA7600500302898 /* CWCalendarView.m in Sources */,
+				697A4B2D1FA73DFF00302898 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		697A4B371FA73DFF00302898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 697A4B251FA73DFF00302898 /* Widget */;
+			targetProxy = 697A4B361FA73DFF00302898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		697A4B161FA73CB600302898 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697A4B171FA73CB600302898 /* Base */,
+				69CB86441FD325E900ABFBF0 /* en */,
+				69CB86451FD3261900ABFBF0 /* ru */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		697A4B2E1FA73DFF00302898 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697A4B2F1FA73DFF00302898 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		697A4B1D1FA73CB600302898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		697A4B1E1FA73CB600302898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		697A4B201FA73CB600302898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MonthCalendarWidget/MonthCalendarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonthCalendarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.MonthCalendarWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		697A4B211FA73CB600302898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MonthCalendarWidget/MonthCalendarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonthCalendarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.MonthCalendarWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		697A4B3A1FA73DFF00302898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.MonthCalendarWidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		697A4B3B1FA73DFF00302898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.grishka.MonthCalendarWidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		697A4B091FA73CB600302898 /* Build configuration list for PBXProject "MonthCalendarWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697A4B1D1FA73CB600302898 /* Debug */,
+				697A4B1E1FA73CB600302898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697A4B1F1FA73CB600302898 /* Build configuration list for PBXNativeTarget "MonthCalendarWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697A4B201FA73CB600302898 /* Debug */,
+				697A4B211FA73CB600302898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697A4B391FA73DFF00302898 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697A4B3A1FA73DFF00302898 /* Debug */,
+				697A4B3B1FA73DFF00302898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 697A4B061FA73CB600302898 /* Project object */;
+}
