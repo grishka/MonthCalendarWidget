@@ -27,15 +27,29 @@
 	
 	font=[NSFont systemFontOfSize:[NSFont systemFontSize]];
 	weekdayFont=[NSFont labelFontOfSize:[NSFont labelFontSize]];
-	weekdayColor=[NSColor textColor];
-	weekendColor=[[NSColor textColor] colorWithAlphaComponent:0.6];
-	otherMonthColor=[[NSColor textColor] colorWithAlphaComponent:0.2];
+	[self _updateColors];
 	
 	NSLocale *locale = [NSLocale localeWithLocaleIdentifier:[[NSLocale preferredLanguages] objectAtIndex:0]];
 	calendar=[NSCalendar currentCalendar];
 	calendar.locale=locale;
 	
+	//[self addObserver:self forKeyPath:@"effectiveAppearance" options:0 context:nil];
+	
 	return self;
+}
+
+/*- (void)observeValueForKeyPath:(NSString *)keyPath
+					  ofObject:(id)object
+						change:(NSDictionary *)change
+					   context:(void *)context{
+	[self _updateColors];
+	[self setNeedsDisplay:YES];
+}*/
+
+- (void)_updateColors{
+	weekdayColor=[[NSColor textColor] colorWithAlphaComponent:1.0];
+	weekendColor=[[NSColor textColor] colorWithAlphaComponent:0.6];
+	otherMonthColor=[[NSColor textColor] colorWithAlphaComponent:0.2];
 }
 
 - (void)setCurrentEra:(NSInteger)_era year:(NSInteger)_year month:(NSInteger)_month{
@@ -61,6 +75,7 @@
 - (void)drawRect:(NSRect)dirtyRect {
 	[super drawRect:dirtyRect];
 	
+	[self _updateColors];
 	NSUInteger firstDay=[calendar firstWeekday];
 	NSArray<NSString*>* dayLabels=[calendar shortStandaloneWeekdaySymbols];
 	for(int i=0;i<7;i++){
@@ -95,7 +110,10 @@
 				[rect appendBezierPathWithRoundedRect:NSMakeRect(30*day, 30*(5-week), 30, 30) xRadius:3 yRadius:3];
 				[weekendColor set];
 				[rect fill];
-				textColor=[NSColor whiteColor];
+				if([[[self effectiveAppearance] name] containsString:@"Dark"])
+					textColor=[NSColor blackColor];
+				else
+    				textColor=[NSColor whiteColor];
 			}
 			
 			NSString* s=[NSString stringWithFormat:@"%d", (int)d];

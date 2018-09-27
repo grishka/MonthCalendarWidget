@@ -55,7 +55,7 @@
 	[content addSubview:calendarView];
 	
 	prevButton=[[NSButton alloc]initWithFrame:NSMakeRect(0, 200, 30, 30)];
-	[prevButton setImage:[NSImage imageNamed:NSImageNameGoBackTemplate]];
+	[prevButton setImage:[NSImage imageNamed:NSImageNameGoLeftTemplate]];
 	[prevButton setFocusRingType:NSFocusRingTypeNone];
 	[prevButton setBordered:false];
 	[prevButton setTarget:self];
@@ -63,7 +63,7 @@
 	[content addSubview:prevButton];
 	
 	nextButton=[[NSButton alloc]initWithFrame:NSMakeRect(0, 200, 30, 30)];
-	[nextButton setImage:[NSImage imageNamed:NSImageNameGoForwardTemplate]];
+	[nextButton setImage:[NSImage imageNamed:NSImageNameGoRightTemplate]];
 	[nextButton setBordered:false];
 	[nextButton setFocusRingType:NSFocusRingTypeNone];
 	[nextButton setTarget:self];

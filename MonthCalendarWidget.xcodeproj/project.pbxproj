@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693C8878215C8F4600ACEF60 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 693C8877215C8F4600ACEF60 /* Info.plist */; };
+		693C887B215C8FA900ACEF60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 693C8879215C8FA900ACEF60 /* InfoPlist.strings */; };
 		697A4B131FA73CB600302898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697A4B121FA73CB600302898 /* AppDelegate.m */; };
 		697A4B151FA73CB600302898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697A4B141FA73CB600302898 /* Assets.xcassets */; };
 		697A4B181FA73CB600302898 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697A4B161FA73CB600302898 /* MainMenu.xib */; };
@@ -43,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		693C8877215C8F4600ACEF60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693C887A215C8FA900ACEF60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		693C887C215C8FAD00ACEF60 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		697A4B0E1FA73CB600302898 /* MonthCalendarWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonthCalendarWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697A4B111FA73CB600302898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		697A4B121FA73CB600302898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		697A4B2B1FA73DFF00302898 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		697A4B2C1FA73DFF00302898 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		697A4B2F1FA73DFF00302898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
-		697A4B311FA73DFF00302898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697A4B351FA73DFF00302898 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
 		697A4B3D1FA7600500302898 /* CWCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWCalendarView.h; sourceTree = "<group>"; };
 		697A4B3E1FA7600500302898 /* CWCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWCalendarView.m; sourceTree = "<group>"; };
@@ -132,7 +136,8 @@
 				697A4B3D1FA7600500302898 /* CWCalendarView.h */,
 				697A4B3E1FA7600500302898 /* CWCalendarView.m */,
 				697A4B2E1FA73DFF00302898 /* TodayViewController.xib */,
-				697A4B311FA73DFF00302898 /* Info.plist */,
+				693C8877215C8F4600ACEF60 /* Info.plist */,
+				693C8879215C8FA900ACEF60 /* InfoPlist.strings */,
 				697A4B351FA73DFF00302898 /* Widget.entitlements */,
 			);
 			path = Widget;
@@ -202,6 +207,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				en,
+				ru,
 			);
 			mainGroup = 697A4B051FA73CB600302898;
 			productRefGroup = 697A4B0F1FA73CB600302898 /* Products */;
@@ -228,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693C8878215C8F4600ACEF60 /* Info.plist in Resources */,
+				693C887B215C8FA900ACEF60 /* InfoPlist.strings in Resources */,
 				697A4B301FA73DFF00302898 /* TodayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +273,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		693C8879215C8FA900ACEF60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				693C887A215C8FA900ACEF60 /* en */,
+				693C887C215C8FAD00ACEF60 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		697A4B161FA73CB600302898 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

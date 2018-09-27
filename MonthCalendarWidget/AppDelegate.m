@@ -18,7 +18,7 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification{
 	NSVisualEffectView* blurView=[[NSVisualEffectView alloc] initWithFrame:NSMakeRect(0, 0, window.frame.size.width, window.frame.size.height)];
-	blurView.material=NSVisualEffectMaterialMediumLight;
+	blurView.material=NSVisualEffectMaterialPopover;
 	blurView.blendingMode=NSVisualEffectBlendingModeBehindWindow;
 	blurView.state=NSVisualEffectStateActive;
 	[window.contentView addSubview:blurView positioned:NSWindowBelow relativeTo:nil];
